@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraSelect.cs" />
     <Compile Include="Assets\Test.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/Unity/SDK/LSlamSDK/LSlamSDK/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
