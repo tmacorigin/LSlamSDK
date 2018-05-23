@@ -1,12 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSlamSDK", "Assembly-CSharp.csproj", "{DEEFCB5B-3C18-AE24-9F1B-198B0B9FFD2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEEFCB5B-3C18-AE24-9F1B-198B0B9FFD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEFCB5B-3C18-AE24-9F1B-198B0B9FFD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEFCB5B-3C18-AE24-9F1B-198B0B9FFD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEFCB5B-3C18-AE24-9F1B-198B0B9FFD2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
