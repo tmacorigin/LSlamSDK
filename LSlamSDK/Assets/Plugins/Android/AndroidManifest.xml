@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unity3d.player"
+	android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_PROFILE" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  
+  <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+		android:allowBackup="true"
+		android:theme="@style/UnityThemeSelector"
+		android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+		android:supportsRtl="true"
+        android:debuggable="true">
+		
+        <activity android:name="com.unity3d.player.UnityPlayerActivity"
+                  android:label="@string/app_name">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+        </activity>
+		
+		<activity
+            android:name="com.lenovo.arsdk.lotuslibs.glass.GlassActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.ARLAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.lenovo.arsdk.lotuslibs.glass.GlassService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+		
+    </application>
+</manifest>
