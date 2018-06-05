@@ -174,5 +174,9 @@ namespace Intel.RealSense.Tracking
             return Q;
         }
 
+        public Vector3 getPosition() { return m_transform.localPosition;  }
+
+        public Quaternion getRotation() { return m_transform.localRotation; }
+
     }
 }
